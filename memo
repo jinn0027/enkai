@@ -1,4 +1,4 @@
-#ref urls
+#参考リンク
 
 SkyWayを使って多人数ビデオチャットを作ってみた
 https://qiita.com/neriai/items/b96bb88f39903a2abf85
@@ -18,7 +18,8 @@ https://note.com/w0o0ps/n/n357f57db3e3e
 https://note.com/w0o0ps/n/n2eca493ced5d
 
 
-############
+#2020/07/30
+herokuのwebアプリのnode.jsサンプルをローカルのubuntu@windows10で動かした。
 
 #node.js test@ubuntu
 
