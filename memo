@@ -1,0 +1,21 @@
+#ref urls
+
+SkyWayを使って多人数ビデオチャットを作ってみた
+https://qiita.com/neriai/items/b96bb88f39903a2abf85
+
+Heroku初心者がHello, Herokuをしてみる
+https://qiita.com/arashida/items/b2f2e01259238235e187
+
+Getting Started on Heroku with Node.js
+https://devcenter.heroku.com/articles/getting-started-with-nodejs
+
+############
+
+#node.js test@ubuntu
+
+git clone https://github.com/heroku/node-js-getting-started.git
+cd node-js-getting-started/
+npm install express --save
+npm start
+
+--> http://localhost:5000/
