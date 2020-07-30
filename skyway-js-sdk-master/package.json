@@ -1,5 +1,5 @@
 {
-  "name": "skyway-js",
+  "name": "skyway",
   "version": "3.0.2",
   "description": "The official JavaScript SDK for SkyWay",
   "main": "dist/skyway.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skyway/skyway-js-sdk"
+    "url": "git+https://github.com/skyway/skyway-js-sdk.git"
   },
   "files": [
     "dist/skyway.js",
@@ -59,7 +59,17 @@
     "query-string": "^6.8.2",
     "sdp-interop": "^0.1.13",
     "sdp-transform": "^2.11.0",
+    "skyway-js": "^3.0.2",
+    "skyway-sdk": "^1.0.1",
     "socket.io-client": "^2.2.0",
     "socket.io-parser": "~3.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/skyway/skyway-js-sdk/issues"
+  },
+  "homepage": "https://github.com/skyway/skyway-js-sdk#readme",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
   }
 }
