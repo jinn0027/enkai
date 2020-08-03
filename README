@@ -1,0 +1,80 @@
+公開方法
+
+(1) どこかにgit cloneする。
+  $ git clone https://github.com/jinn0027/enkai.git
+
+(2) どこかにディレクトリを作り、その中に移動する。
+  $ mkdir video-chat
+  $ cd video-chat
+
+(3) enkai/video-chatの中身をディレクトリ以下にコピーする。
+  $ [GIT_CLONED_DIR]/enkai/copyall.sh
+
+(4) 新規にgitリポジトリを作成する。
+  $ git init
+  $ git add .
+  $ git commit -m "."
+  
+(5) herokuにアプリケーションを作成する。
+  $ heroku create
+
+  なんかこんな表示が出るはず。このcalm-garden-....comまでがドメインIDになる。
+  https://calm-garden-58575.herokuapp.com/ | https://git.heroku.com/calm-garden-58575.git
+  
+(6) skywayのAPIキーのところに、このドメインIDを追加する。
+
+(7) herokuにコードをpushする。（デプロイする）
+  $ git push heroku master
+
+(8) 問題なければ以下のようなurlでアクセスを確認する。
+  https://calm-garden-58575.herokuapp.com/
+  (*)ドメインIDはアプリケーションによって変化する。
+
+---
+
+もしもすでに作成されたアプリケーションに再度反映するだけならば
+
+$ [GIT_CLONED_DIR]/enkai/copyall.sh
+  $ git add .
+  $ git commit -m "."
+  $ git push heroku master
+
+のみで行けるはず。
+
+---
+
+*基本はこちらのgitのコードをマスターコードとしたい。
+
+==========================
+
+#参考リンク
+
+SkyWayを使って多人数ビデオチャットを作ってみた
+https://qiita.com/neriai/items/b96bb88f39903a2abf85
+
+Heroku初心者がHello, Herokuをしてみる
+https://qiita.com/arashida/items/b2f2e01259238235e187
+
+Getting Started on Heroku with Node.js
+https://devcenter.heroku.com/articles/getting-started-with-nodejs
+
+The Heroku CLI
+https://devcenter.heroku.com/articles/heroku-cli
+
+[5分でできる] Node.jsでつくったWebアプリを無料でサーバー公開する方法(前編)
+https://note.com/w0o0ps/n/n357f57db3e3e
+[5分でできる] Node.jsでつくったWebアプリを無料でサーバー公開する方法(後編)
+https://note.com/w0o0ps/n/n2eca493ced5d
+
+
+#2020/07/30
+herokuのwebアプリのnode.jsサンプルをローカルのubuntu@windows10で動かした。
+
+#node.js test@ubuntu
+
+git clone https://github.com/heroku/node-js-getting-started.git
+cd node-js-getting-started/
+npm install express --save
+npm start
+
+--> http://localhost:5000/
